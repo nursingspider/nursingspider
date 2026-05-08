@@ -6,161 +6,126 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f7f9;
+    line-height: 1.7;
+    background-color: #f8f9fa;
     color: #333;
 }
 
 header {
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: #0d2a5e;           /* Deep Navy Blue */
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 18px 10px;
 }
 
-header h1 {
-    font-size: 2.8rem;
+header p {
+    margin-top: 5px;
+    font-size: 1.05rem;
 }
 
+/* Navigation */
 nav {
-    background-color: #0056b3;
-    padding: 15px;
+    background-color: #1e3a8a;
+    padding: 14px 10px;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
-    margin: 10px 15px;
+    margin: 0 12px;
     text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s;
 }
 
-nav a:hover {
-    color: #ffeb3b;
-    text-decoration: underline;
-}
-
-main {
-    max-width: 1200px;
-    margin: 25px auto;
-    padding: 0 20px;
-}
-
-.section {
-    background: white;
-    margin: 25px 0;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-h2, h3 {
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-.free { color: #28a745; font-weight: bold; }
-.premium { color: #fd7e14; font-weight: bold; }
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
+nav a:hover, nav a.active {
+    background-color: #3b82f6;
     color: white;
-    margin-top: 40px;
 }
 
-/* Mobile Friendly */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
-    nav a {
-        margin: 8px 10px;
-        font-size: 0.95rem;
-    }
-}
-
+/* Hero */
 .hero {
     text-align: center;
     background: white;
     padding: 40px 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.btn {
-    background: #007bff;
-    color: white;
-    padding: 12px 25px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.btn-secondary {
-    background: #6c757d;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .hero h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-}
-
-.hero {
-    text-align: center;
-    background: white;
-    padding: 50px 20px;
-    border-radius: 12px;
-    margin: 25px 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #0d2a5e;
+    font-size: 2.1rem;
+    margin-bottom: 12px;
 }
 
 .btn {
-    background: #007bff;
+    background: #0d2a5e;
     color: white;
     padding: 14px 28px;
     margin: 10px;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: bold;
     display: inline-block;
 }
 
 .btn-secondary {
-    background: #6c757d;
+    background: transparent;
+    border: 2px solid #0d2a5e;
+    color: #0d2a5e;
 }
 
-.hero h2 {
-    font-size: 2.3rem;
-    margin-bottom: 15px;
-}
-
-/* Improved User Experience */
+/* Sections */
 .section {
-    margin: 30px 0;
-    padding: 25px;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 20px;
 }
 
-ul {
-    line-height: 2.0;
+.section h3 {
+    color: #0d2a5e;
+    margin-bottom: 18px;
 }
 
-li {
-    margin-bottom: 12px;
-    font-size: 1.05rem;
-}
+.free { color: #166534; font-weight: bold; }
 
-/* Card Style for Better Look */
-.content-card {
+/* FAQ */
+.faq {
     background: white;
     padding: 20px;
     margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.faq h4 {
+    color: #0d2a5e;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0d2a5e;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #c3d4f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    .hero h2 { font-size: 1.8rem; }
+    nav a { margin: 6px 8px; padding: 8px 14px; font-size: 0.95rem; }
 }
