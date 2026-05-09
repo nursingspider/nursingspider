@@ -165,3 +165,21 @@ footer a:hover {
 .premium-card h4 {
     color: #b45309;
 }
+
+.btn-view {
+    display: inline-block;
+    background: #0d2a5e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+    background: #1e40af;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(13, 42, 94, 0.3);
+}
